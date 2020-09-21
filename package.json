@@ -5,10 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "p.save": "prisma migrate save --experimental",
+    "p.up": "prisma migrate up --experimental",
+    "p.generate": "prisma generate"
   },
   "dependencies": {
+    "@nexus/schema": "^0.15.0",
+    "apollo-server-micro": "^2.17.0",
     "next": "9.5.3",
+    "nexus-plugin-prisma": "^0.19.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
